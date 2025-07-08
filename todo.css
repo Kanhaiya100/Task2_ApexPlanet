@@ -1,0 +1,98 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: black;
+  margin-bottom: 30px;
+}
+
+section {
+  background: #ffffff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 65%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #f9f9f9;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  word-break: break-word;
+}
+
+li button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background: darkred;
+}
+
+.clear-btn {
+  background-color: red;
+  margin-top: 20px;
+}
+
+.clear-btn:hover {
+  background-color: darkred;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 5px;
+  }
+}

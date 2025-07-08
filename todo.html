@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List with LocalStorage </title>
+  <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+
+  <h1>To-Do List with History </h1>
+
+  <section class="todo-section">
+    <h2>📋 To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter Task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+
+    <button onclick="clearAllTasks()" class="clear-btn">🗑️ Clear All Tasks & History</button>
+  </section>
+
+  <section class="history-section">
+    <h2>📜 Task History</h2>
+    <ul id="historyList"></ul>
+  </section>
+
+  <script src="todo.js"></script>
+</body>
+</html>

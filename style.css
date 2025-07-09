@@ -28,6 +28,9 @@ section {
 form {
   display: inline-block;
   text-align: left;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 form label {
@@ -37,12 +40,13 @@ form label {
 }
 
 input, button {
-  padding: 10px;
+  padding: 12px;
   margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 250px;
+  width: 100%;
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 /* Button Styling */
@@ -52,6 +56,7 @@ button {
   border: none;
   margin-top: 15px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 button:hover {
@@ -89,20 +94,48 @@ li button:hover {
 }
 
 /* Responsive Styles */
-@media (max-width: 600px) {
+
+/* Tablets and below */
+@media (max-width: 768px) {
   nav h1 {
+    font-size: 22px;
+  }
+
+  section h2 {
     font-size: 20px;
   }
-  
+
+  input, button {
+    font-size: 15px;
+    padding: 11px;
+  }
+
+  form {
+    padding: 10px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 480px) {
+  nav h1 {
+    font-size: 18px;
+  }
+
   section h2 {
     font-size: 18px;
   }
 
   input, button {
-    width: 90%;
+    font-size: 14px;
+    padding: 10px;
   }
 
-  form {
-    width: 100%;
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li button {
+    margin-top: 8px;
   }
 }
